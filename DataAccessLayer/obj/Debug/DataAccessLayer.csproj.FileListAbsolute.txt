@@ -1,0 +1,6 @@
+C:\Users\PC\OneDrive\Belgeler\GitHub\H20-Finance\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\PC\OneDrive\Belgeler\GitHub\H20-Finance\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\PC\OneDrive\Belgeler\GitHub\H20-Finance\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive\Belgeler\GitHub\H20-Finance\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Belgeler\GitHub\H20-Finance\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\PC\OneDrive\Belgeler\GitHub\H20-Finance\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

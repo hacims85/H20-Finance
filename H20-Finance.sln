@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H20-Finance", "H20-Finance\H20-Finance.csproj", "{61A3AD9F-4EF7-4ABF-8DE5-4622E541CA79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{7C07D82B-6D2B-43B8-9324-7A91F0250C92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61A3AD9F-4EF7-4ABF-8DE5-4622E541CA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A3AD9F-4EF7-4ABF-8DE5-4622E541CA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A3AD9F-4EF7-4ABF-8DE5-4622E541CA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A3AD9F-4EF7-4ABF-8DE5-4622E541CA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C07D82B-6D2B-43B8-9324-7A91F0250C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C07D82B-6D2B-43B8-9324-7A91F0250C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C07D82B-6D2B-43B8-9324-7A91F0250C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C07D82B-6D2B-43B8-9324-7A91F0250C92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDB92409-F95E-40EB-9F46-9CD62087DC6A}
+	EndGlobalSection
+EndGlobal

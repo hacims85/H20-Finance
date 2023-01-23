@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPanelMasterPage.master.cs" Inherits="H20_Finance.AdminPanel.AdminPanelMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Style/MainCss.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header lila">
+            <div style="float:left"><a href="AdminPanelHomePage.aspx"><img src="Image/H2oDamlaLogo.png"  class="H2Ologo"/></a></div>
+            <div><h1>ADMİN PANEL</h1> </div>
+            <div style="float:right" ></div>
+           
+        </div>
+        <div>
+            <div class="container"
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
