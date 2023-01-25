@@ -6,22 +6,37 @@
 <head runat="server">
     <title></title>
     <link href="Style/MainCss.css" rel="stylesheet" />
+    <link href="Style/SayfalarCss.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="header lila">
-            <div style="float:left"><a href="AdminPanelHomePage.aspx"><img src="Image/H2oDamlaLogo.png"  class="H2Ologo"/></a></div>
-            <div><h1>ADMİN PANEL</h1> </div>
-            <div style="float:right" ></div>
-           
+    <form id="form1" runat="server" style="height:100%">
+        <div class="header silver">
+            <div style="float: left">
+                <a href="AdminPanelHomePage.aspx">
+                    <img src="Image/H2oDamlaLogo.png" class="H2Ologo" /></a>
+            </div>
+            <div>
+                <h1>ADMİN PANEL</h1>
+            </div>
+            <div class="cikis">
+                <asp:Label ID="lbl_kisiadi" runat="server"></asp:Label>
+                <asp:LinkButton ID="lbtn_cikis" runat="server" Text="Çıkış" OnClick="lbtn_cikis_Click"></asp:LinkButton>
+            </div>
         </div>
-        <div>
-            <div class="container"
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+
+        <div class="container">
+            <div class="sideContainer lila">
+                <a href="Kripto_Ekle.aspx">Kripto Ekle</a><br />
+                <a href="#">NFT Ekle</a><br />
+                <a href="#">Bakiye Onay</a><br />
+            </div>
+            <div class="contentContainer">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
         </div>
     </form>
 </body>

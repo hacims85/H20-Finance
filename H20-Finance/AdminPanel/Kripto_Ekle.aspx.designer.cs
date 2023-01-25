@@ -11,52 +11,34 @@ namespace H20_Finance.AdminPanel
 {
 
 
-    public partial class AdminPanelMasterPage
+    public partial class Kripto_Ekle
     {
 
         /// <summary>
-        /// head control.
+        /// tb_isim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.TextBox tb_isim;
 
         /// <summary>
-        /// form1 control.
+        /// tb_nick control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox tb_nick;
 
         /// <summary>
-        /// lbl_kisiadi control.
+        /// tb_arz control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_kisiadi;
-
-        /// <summary>
-        /// lbtn_cikis control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtn_cikis;
-
-        /// <summary>
-        /// ContentPlaceHolder1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.TextBox tb_arz;
     }
 }

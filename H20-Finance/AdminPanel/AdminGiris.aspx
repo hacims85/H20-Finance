@@ -16,6 +16,9 @@
 
                 <div class="content">
                     <img src="Image/H2oDamlaLogo.png" /><br />
+                    <asp:Panel ID="pnl_hata" runat="server" Visible="false">
+                        <asp:Label ID="lbl_hata" runat="server"></asp:Label>
+                    </asp:Panel>
                     <asp:TextBox ID="tb_mail" runat="server" placeholder="Mail Adresi Giriniz" CssClass="textbox"></asp:TextBox><br />
                     <asp:TextBox ID="tb_sifre" runat="server" TextMode="Password" placeholder="Şifre Giriniz" CssClass="textbox"></asp:TextBox>
                     <asp:LinkButton ID="lbtn_giris" runat="server" Text="Giriş" OnClick="lbtn_giris_Click"></asp:LinkButton>

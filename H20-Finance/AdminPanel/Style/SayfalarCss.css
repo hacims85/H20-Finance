@@ -1,0 +1,23 @@
+﻿/*HomePage Sayfası*/
+
+.homePage {
+    background-color: #d57ac2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+    .homePage img {
+        width: 700px;
+    }
+
+    /*Kripto Ekle Sayfası*/
+
+.textbox {
+    height:60px;
+    display:flex;
+    width:35%;
+    margin:100px auto;
+}

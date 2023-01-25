@@ -32,12 +32,14 @@ namespace H20_Finance.AdminPanel
                 }
                 else
                 {
-
+                    pnl_hata.Visible = true;
+                    lbl_hata.Text = "Kullanıcı Adı Veya Şifre Hatalı";
                 }
             }
             else
             {
-
+                pnl_hata.Visible = true;
+                lbl_hata.Text = "Kullanıcı Adı Veya Şifre Boş Bırakılamaz";
             }
         }
     }

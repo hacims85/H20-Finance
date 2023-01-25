@@ -26,10 +26,11 @@ html, body {
     justify-content: center;
 }
 
-.content img{
-    width:50%;
-    margin:0 auto 30px;
+.content img {
+    width: 50%;
+    margin: 0 auto 30px;
 }
+
 .content {
     width: 100%;
     display: flex;
@@ -42,11 +43,23 @@ html, body {
         width: 70%;
         margin: 0 auto;
     }
+
     .content #lbtn_giris {
         margin: 20px auto;
         text-decoration: none;
         background-color: #004F4D;
+        color: white;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+
+    #pnl_hata{
+        margin-bottom:20px;
+        background-color:darkred;
         color:white;
-        padding:15px;
-        border-radius:15px;
+        font-size:18px;
+        border-radius:5px;
+        text-align:center;
+        padding:8px;
     }
