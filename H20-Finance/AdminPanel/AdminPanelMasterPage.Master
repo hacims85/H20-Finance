@@ -30,7 +30,7 @@
         <div class="container">
             <div class="sideContainer lila">
                 <a href="Kripto_Ekle.aspx">Kripto Ekle</a><br />
-                <a href="#">NFT Ekle</a><br />
+                <a href="nft_Ekle.aspx">NFT Ekle</a><br />
                 <a href="#">Bakiye Onay</a><br />
             </div>
             <div class="contentContainer">

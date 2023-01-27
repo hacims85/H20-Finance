@@ -16,5 +16,6 @@ namespace DataAccessLayer
         public string Mail { get; set; }
         public string Sifre { get; set; }
         public string Telefon { get; set; }
+        public string Resim { get; set; }
     }
 }

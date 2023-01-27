@@ -13,11 +13,69 @@
         width: 700px;
     }
 
-    /*Kripto Ekle Sayfası*/
+/*Kripto Ekle Sayfası*/
+
+.ekle_Container {
+    width: 100%;
+    height: 100%;
+    background-color: #00ff90;
+}
+
+.ekle_Title {
+    padding-top: 150px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.ekle_content {
+    display: grid;
+    width: 35%;
+    margin: 100px auto 0;
+}
 
 .textbox {
-    height:60px;
-    display:flex;
-    width:35%;
-    margin:100px auto;
+    height: 60px;
+    margin: 10px 0;
+    border-radius: 9px;
+}
+
+.ekle_content a {
+    text-decoration: none;
+    text-align: center;
+    margin: 25px auto;
+    background-color: #0d0909;
+    color: white;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+    .ekle_content a:hover {
+        color: red;
+    }
+
+.basarili {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #04bbc7;
+    font-weight: 900;
+    text-align: center;
+    height: 40px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.basarisiz {
+    width: 100%;
+    margin: 0 auto;
+    background-color: red;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    height: 40px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.resimekle {
+    width: inherit;
 }

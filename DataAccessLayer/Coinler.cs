@@ -12,5 +12,6 @@ namespace DataAccessLayer
         public string Isim { get; set; }
         public string CoinNick { get; set; }
         public int Max_Arz { get; set; }
+        public string Resim { get; set; }
     }
 }
