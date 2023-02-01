@@ -87,6 +87,15 @@ namespace H20_Finance.AdminPanel
         protected global::System.Web.UI.WebControls.FileUpload fu_resim;
 
         /// <summary>
+        /// cb_aktif control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cb_aktif;
+
+        /// <summary>
         /// lbtn_ekle control.
         /// </summary>
         /// <remarks>

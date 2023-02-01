@@ -20,6 +20,7 @@ namespace H20_Finance.AdminPanel
         {
             lv_onaylanmis.Visible = false;
             lv_talep.Visible = true;
+            lv_reddedilmis.Visible = false;
             lv_talep.DataSource = dm.TalepListele(1);
             lv_talep.DataBind();
         }

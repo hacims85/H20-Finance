@@ -32,7 +32,7 @@
                 <a href="Kripto_Ekle.aspx">Kripto Ekle</a><br />
                 <a href="nft_Ekle.aspx">NFT Ekle</a><br />
                 <a href="Bakiye_Onay.aspx">Bakiye Onay</a><br />
-                <a href="#">Coin Sil</a>
+                <a href="CoinSil.aspx">Coin Sil</a>
             </div>
             <div class="contentContainer">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

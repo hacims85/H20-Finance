@@ -34,7 +34,8 @@ namespace H20_Finance.AdminPanel
                                 c.Isim = tb_isim.Text;
                                 c.CoinNick = tb_nick.Text;
                                 c.Max_Arz = Convert.ToInt32(tb_arz.Text);
-                                c.Fiyat=Convert.ToDecimal(tb_fiyat.Text);
+                                c.Fiyat = Convert.ToDecimal(tb_fiyat.Text);
+                                c.Aktif = cb_aktif.Checked;
                                 if (fu_resim.HasFile)
                                 {
                                     FileInfo fi = new FileInfo(fu_resim.FileName);

@@ -14,5 +14,6 @@ namespace DataAccessLayer
         public int Max_Arz { get; set; }
         public string Resim { get; set; }
         public decimal Fiyat { get; set; }
+        public bool Aktif { get; set; }
     }
 }

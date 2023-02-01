@@ -87,13 +87,14 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "INSERT INTO Coinler(Isim,CoinNick,Max_Arz,Resim,Fiyat) VALUES(@isim,@coinNick,@maxArz,@resim,@fiyat)";
+                cmd.CommandText = "INSERT INTO Coinler(Isim,CoinNick,Max_Arz,Resim,Fiyat,Aktif) VALUES(@isim,@coinNick,@maxArz,@resim,@fiyat,@aktif)";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@isim", c.Isim);
                 cmd.Parameters.AddWithValue("@coinNick", c.CoinNick);
                 cmd.Parameters.AddWithValue("@maxArz", c.Max_Arz);
                 cmd.Parameters.AddWithValue("@resim", c.Resim);
                 cmd.Parameters.AddWithValue("@fiyat", c.Fiyat);
+                cmd.Parameters.AddWithValue("@aktif", c.Aktif);
                 con.Open();
                 cmd.ExecuteNonQuery();
                 return true;

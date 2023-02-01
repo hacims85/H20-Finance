@@ -22,6 +22,10 @@
             <label>Resim Ekle</label>
             <br />
             <asp:FileUpload ID="fu_resim" runat="server" CssClass="resimekle"></asp:FileUpload>
+            <div class="check">
+                <label style="text-align: center">Aktif</label><br />
+                <asp:CheckBox ID="cb_aktif" runat="server"></asp:CheckBox>
+            </div>
             <asp:LinkButton ID="lbtn_ekle" runat="server" OnClick="lbtn_ekle_Click">EKLE</asp:LinkButton>
         </div>
     </div>

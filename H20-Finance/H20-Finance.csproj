@@ -70,6 +70,7 @@
     <Content Include="AdminPanel\AdminGiris.aspx" />
     <Content Include="AdminPanel\AdminPanelHomePage.aspx" />
     <Content Include="AdminPanel\Bakiye_Onay.aspx" />
+    <Content Include="AdminPanel\CoinSil.aspx" />
     <Content Include="AdminPanel\Image\GirisSayfasi.png" />
     <Content Include="AdminPanel\Image\H2oDamlaLogo.png" />
     <Content Include="AdminPanel\Kripto_Ekle.aspx" />
@@ -107,6 +108,13 @@
     </Compile>
     <Compile Include="AdminPanel\Bakiye_Onay.aspx.designer.cs">
       <DependentUpon>Bakiye_Onay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\CoinSil.aspx.cs">
+      <DependentUpon>CoinSil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\CoinSil.aspx.designer.cs">
+      <DependentUpon>CoinSil.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel\Kripto_Ekle.aspx.cs">
       <DependentUpon>Kripto_Ekle.aspx</DependentUpon>

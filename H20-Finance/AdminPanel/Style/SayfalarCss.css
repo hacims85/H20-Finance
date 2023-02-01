@@ -79,11 +79,23 @@
 .resimekle {
     width: inherit;
 }
+.check{
+    display:flex;
+    margin-top:25px;
+}
+.check label{
+    margin-right:15px;
+}
+
+.talepcontainer {
+    background-color: #00ff90;
+    height: 100%;
+}
 
 .talepbaslik {
     font-size: 50px;
     text-align: center;
-    margin: 50px;
+    padding: 50px;
 }
 
 .taleptable {
@@ -92,6 +104,8 @@
     align-content: center;
     border: none;
     padding: 5px;
+    font-weight:900;
+
 }
 
     .taleptable th {
@@ -101,6 +115,8 @@
     .taleptable td {
         padding: 7px;
     }
+
+
 
 .btn_onayla {
     text-decoration: none;
@@ -127,18 +143,17 @@
     text-decoration: none;
     margin: 25px;
     padding: 10px;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 .btn_bekleyen {
-    background-color: red;
-    opacity: .4;
+    background-color: #bfb005;
     color: whitesmoke;
 }
 
 .btn_onaylanan {
-    background-color:green;
-    color:whitesmoke;
+    background-color: green;
+    color: whitesmoke;
 }
 
 .btn_reddedilen {
