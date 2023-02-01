@@ -13,5 +13,6 @@ namespace DataAccessLayer
         public string CoinNick { get; set; }
         public int Max_Arz { get; set; }
         public string Resim { get; set; }
+        public decimal Fiyat { get; set; }
     }
 }

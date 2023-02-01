@@ -19,67 +19,79 @@ namespace H20_Finance.AdminPanel
 
         protected void lbtn_ekle_Click(object sender, EventArgs e)
         {
+
             if (!string.IsNullOrEmpty(tb_isim.Text.Trim()))
             {
                 if (!string.IsNullOrEmpty(tb_arz.Text.Trim()))
                 {
                     if (!string.IsNullOrEmpty(tb_nick.Text.Trim()))
                     {
-                        if (dm.CoinKontrol(tb_isim.Text.Trim()))
+                        if (!string.IsNullOrEmpty(tb_fiyat.Text.Trim()))
                         {
-                            Coinler c = new Coinler();
-                            c.Isim = tb_isim.Text;
-                            c.CoinNick = tb_nick.Text;
-                            c.Max_Arz = Convert.ToInt32(tb_arz.Text);
-                            if (fu_resim.HasFile)
+                            if (dm.CoinKontrol(tb_isim.Text.Trim()))
                             {
-                                FileInfo fi = new FileInfo(fu_resim.FileName);
-                                if (fi.Extension == ".jpg" || fi.Extension == ".png")
+                                Coinler c = new Coinler();
+                                c.Isim = tb_isim.Text;
+                                c.CoinNick = tb_nick.Text;
+                                c.Max_Arz = Convert.ToInt32(tb_arz.Text);
+                                c.Fiyat=Convert.ToDecimal(tb_fiyat.Text);
+                                if (fu_resim.HasFile)
                                 {
-                                    string uzanti = fi.Extension;
-                                    string isim = Guid.NewGuid().ToString();
-                                    c.Resim = isim + uzanti;
-                                    fu_resim.SaveAs(Server.MapPath("~/AdminPanel/Image/NftCoinImage/" + isim + uzanti));
-                                    if (dm.CoinEkle(c))
+                                    FileInfo fi = new FileInfo(fu_resim.FileName);
+                                    if (fi.Extension == ".jpg" || fi.Extension == ".png")
                                     {
-                                        pnl_basarili.Visible = true;
-                                        pnl_basarisiz.Visible = false;
-                                        tb_isim.Text = "";
-                                        tb_nick.Text = "";
-                                        tb_arz.Text = "";
+                                        string uzanti = fi.Extension;
+                                        string isim = Guid.NewGuid().ToString();
+                                        c.Resim = isim + uzanti;
+                                        fu_resim.SaveAs(Server.MapPath("~/AdminPanel/Image/NftCoinImage/" + isim + uzanti));
+                                        if (dm.CoinEkle(c))
+                                        {
+                                            pnl_basarili.Visible = true;
+                                            pnl_basarisiz.Visible = false;
+                                            tb_isim.Text = "";
+                                            tb_nick.Text = "";
+                                            tb_arz.Text = "";
+                                            tb_fiyat.Text = "";
+                                        }
+                                        else
+                                        {
+                                            pnl_basarili.Visible = false;
+                                            pnl_basarisiz.Visible = true;
+                                            lbl_mesaj.Text = "Kripto Eklenirken Hata Oluştu";
+                                        }
+
                                     }
                                     else
                                     {
                                         pnl_basarili.Visible = false;
                                         pnl_basarisiz.Visible = true;
-                                        lbl_mesaj.Text = "Kripto Eklenirken Hata Oluştu";
+                                        lbl_mesaj.Text = "Resim uzantısı sadece .jpg veya .png olmalıdır";
                                     }
-
                                 }
                                 else
                                 {
                                     pnl_basarili.Visible = false;
                                     pnl_basarisiz.Visible = true;
-                                    lbl_mesaj.Text = "Resim uzantısı sadece .jpg veya .png olmalıdır";
+                                    lbl_mesaj.Text = "Resim Eklemeniz Gerekmektedir";
                                 }
+
+
+
+
+
                             }
                             else
                             {
                                 pnl_basarili.Visible = false;
                                 pnl_basarisiz.Visible = true;
-                                lbl_mesaj.Text = "Resim Eklemeniz Gerekmektedir";
+                                lbl_mesaj.Text = "Kripto Daha Önce Eklenmiş";
                             }
-
-
-
-
-
                         }
                         else
                         {
                             pnl_basarili.Visible = false;
                             pnl_basarisiz.Visible = true;
-                            lbl_mesaj.Text = "Kripto Daha Önce Eklenmiş";
+                            lbl_mesaj.Text = "Fiyat Boş Bırakılamaz";
                         }
                     }
                     else

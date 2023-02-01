@@ -79,3 +79,69 @@
 .resimekle {
     width: inherit;
 }
+
+.talepbaslik {
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+
+.taleptable {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: none;
+    padding: 5px;
+}
+
+    .taleptable th {
+        padding: 7px;
+    }
+
+    .taleptable td {
+        padding: 7px;
+    }
+
+.btn_onayla {
+    text-decoration: none;
+    background-color: darkgreen;
+    color: whitesmoke;
+    padding: 3px;
+    margin: 3px;
+}
+
+.btn_reddet {
+    text-decoration: none;
+    background-color: red;
+    color: whitesmoke;
+    padding: 4px;
+    margin: 3px;
+}
+
+.butonlar {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    text-decoration: none;
+    margin: 25px;
+    padding: 10px;
+    border-radius:10px;
+}
+
+.btn_bekleyen {
+    background-color: red;
+    opacity: .4;
+    color: whitesmoke;
+}
+
+.btn_onaylanan {
+    background-color:green;
+    color:whitesmoke;
+}
+
+.btn_reddedilen {
+    background-color: red;
+    color: whitesmoke;
+}

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Services.Protocols;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -42,5 +43,13 @@ namespace H20_Finance.AdminPanel
                 lbl_hata.Text = "Kullanıcı Adı Veya Şifre Boş Bırakılamaz";
             }
         }
+
+        [System.Web.Services.WebMethod]
+        public static void GetRateing(decimal change) {
+
+            DataModel dm2 = new DataModel();
+            dm2.UpdateCoinPrice(change);
+        }
+      
     }
 }

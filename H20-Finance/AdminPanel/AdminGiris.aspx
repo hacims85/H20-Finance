@@ -26,5 +26,50 @@
             </div>
         </div>
     </form>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            ChangeRate.Initialize();
+        });
+        var ChangeRate = {
+            Initialize: function () {
+                this.GetRateing();
+                
+            },
+            GetRateing: function () {
+                var _this = this;
+                $.ajax({
+                    type: "GET",
+                    url: "https://api.apilayer.com/currency_data/change",
+                    data: { 'apikey': 'wkLfqZyILyBKCPFnQLMUSX5LFiIHtHNl' },
+                    success: function (result) {
+                        console.log(result)
+                        if (result.success) {
+                            var rateing = result.quotes.USDTRY;
+                            _this.SendRating(rateing.change);
+                        }
+                    },
+                    error: function (err, xhr) {
+                        console.log(xhr);
+                    }
+                });
+            },
+            SendRating: function (change) {
+               $.ajax({
+                   url: 'AdminGiris.aspx/GetRateing',
+                    dataType: 'json',
+                    type: 'POST',
+                    data: "{'change': "+change+"}",
+                    contentType: 'application/json; charset=utf-8',
+                });
+            }
+        };
+        var obj = {
+            name: "dasda",
+            Id: 1,
+            Image: "sdad"
+        };
+      
+    </script>
 </body>
 </html>

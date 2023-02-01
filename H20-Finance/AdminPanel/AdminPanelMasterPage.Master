@@ -12,7 +12,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server" style="height:100%">
+    <form id="form1" runat="server" style="height: 100%">
         <div class="header silver">
             <div style="float: left">
                 <a href="AdminPanelHomePage.aspx">
@@ -31,7 +31,8 @@
             <div class="sideContainer lila">
                 <a href="Kripto_Ekle.aspx">Kripto Ekle</a><br />
                 <a href="nft_Ekle.aspx">NFT Ekle</a><br />
-                <a href="#">Bakiye Onay</a><br />
+                <a href="Bakiye_Onay.aspx">Bakiye Onay</a><br />
+                <a href="#">Coin Sil</a>
             </div>
             <div class="contentContainer">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
