@@ -111,7 +111,54 @@ namespace DataAccessLayer
         {
             return true;
         }
+        public List<Coinler> coinListele()
+        {
+            try
+            {
+                List<Coinler> coin = new List<Coinler>();
+
+                cmd.CommandText = "SELECT ID,Isim,CoinNick,Fiyat FROM Coinler WHERE Aktif=1";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Coinler c = new Coinler();
+                    c.ID = reader.GetInt32(0);
+                    c.Isim = reader.GetString(1);
+                    c.CoinNick = reader.GetString(2);
+                    c.Fiyat = reader.GetDecimal(3);
+                    coin.Add(c);
+                }
+                return coin;
+            }
+            catch
+            {
+
+                return null;
+            }
+            finally { con.Close(); }
+        }
+        public void coinSil(int id)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE Coinler SET Aktif=0 WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
         #endregion
+
         #region NFT Metodları
         public bool NFTKontrol(string isim)
         {
